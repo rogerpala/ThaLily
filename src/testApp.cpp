@@ -6,10 +6,12 @@ extern bool goingForward;
 extern int targetFrame;
 extern bool DEBUG;
 
-int NUM_INTRO_FRAMES = 380;
-int TOTAL_FRAMES = 1660;
+int NUM_INTRO_FRAMES = 180;
+int TOTAL_FRAMES = 1481;
 int FRAMES_PER_FRAME_INTRO = 1;
 int FRAMES_PER_TRANSITION_INTRO = 1;
+int FRAMES_PER_FRAME = 20;
+int FRAMES_PER_TRANSITION = 200;
 int DEFAULT_HAAR_MIN_WIDTH = 65;
 int DEFAULT_HAAR_MIN_HEIGHT = 100;
 
@@ -98,11 +100,12 @@ void testApp::draw(){
 			viewerLevel++;
 			goingForward = true;
 		}
-		
 		targetFrame = viewerLevel + NUM_INTRO_FRAMES;
 	}else {
 		if (videoManager.frameNumber == NUM_INTRO_FRAMES) {
 			isIntroPlayed = true;
+			framesPerFrame = FRAMES_PER_FRAME;
+			framesPerTransition = FRAMES_PER_TRANSITION;
 		}
 	}
 

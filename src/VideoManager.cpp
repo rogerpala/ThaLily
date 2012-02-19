@@ -21,7 +21,9 @@ extern bool DEBUG;
 //--------------------------------------------------------------
 VideoManager::VideoManager(){
 	
+	ofSetDataPathRoot("../../../data/");
 	
+	//cout << "DATA PATH: " << ofToDataPath("videos/01_cropped_grade_remapped_photojpeg.mov") << endl;
 	
 	
 	
@@ -29,10 +31,10 @@ VideoManager::VideoManager(){
 	mov2.setPixelFormat(OF_PIXELS_RGB);
 	
 	
-	ofDisableDataPath();
-	mov1.loadMovie("data/videos/01_cropped_grade_remapped_photojpeg.mov");
-	mov2.loadMovie("data/videos/01_cropped_grade_remapped_photojpeg.mov");
-	ofEnableDataPath();
+	//ofDisableDataPath();
+	mov1.loadMovie("videos/01_cropped_grade_remapped_photojpeg.mov");
+	mov2.loadMovie("videos/01_cropped_grade_remapped_photojpeg.mov");
+	//ofEnableDataPath();
 	
 		
 	from = &mov1;
