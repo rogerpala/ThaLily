@@ -1,0 +1,9 @@
+.DS_Store
+/build
+/bin/thaLilyDebug.app
+*.pbxuser
+*.perspectivev3
+*.build*
+xcuserdata
+project.xcworkspace
+.pbxproj
