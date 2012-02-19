@@ -4,6 +4,7 @@ extern int framesPerFrame;
 extern int framesPerTransition;
 extern bool goingForward;
 extern int targetFrame;
+extern bool DEBUG;
 
 int NUM_INTRO_FRAMES = 380;
 int TOTAL_FRAMES = 1660;
@@ -11,7 +12,6 @@ int FRAMES_PER_FRAME_INTRO = 1;
 int FRAMES_PER_TRANSITION_INTRO = 1;
 int DEFAULT_HAAR_MIN_WIDTH = 65;
 int DEFAULT_HAAR_MIN_HEIGHT = 100;
-bool DEBUG = false;
 
 //--------------------------------------------------------------
 void testApp::setup(){

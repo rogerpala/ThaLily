@@ -280,7 +280,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {254, 691}}</string>
+							<string>{{0, 0}, {254, 506}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,14 +292,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {271, 709}}</string>
+						<string>{{0, 0}, {271, 524}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>254</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>320 23 1104 750 0 0 1920 1178 </string>
+						<string>297 352 1099 565 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C59B0E0314F161F100EF2D89</string>
+										<string>C59B0E0914F16F4300EF2D89</string>
 										<key>history</key>
 										<array>
 											<string>C53DDA25142D353800198F07</string>
@@ -340,11 +340,11 @@
 											<string>C53969D114741E8200811FCE</string>
 											<string>C59B0DBC14F1447800EF2D89</string>
 											<string>C59B0DBD14F1447800EF2D89</string>
-											<string>C59B0DD814F1568800EF2D89</string>
 											<string>C59B0DDE14F1577E00EF2D89</string>
 											<string>C59B0DF914F160E500EF2D89</string>
-											<string>C59B0DFA14F160E500EF2D89</string>
-											<string>C59B0DFB14F160E500EF2D89</string>
+											<string>C59B0E0614F16F4300EF2D89</string>
+											<string>C59B0E0714F16F4300EF2D89</string>
+											<string>C59B0E0814F16F4300EF2D89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,14 +356,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {828, 573}}</string>
+								<string>{{0, 0}, {823, 388}}</string>
 								<key>RubberWindowFrame</key>
-								<string>320 23 1104 750 0 0 1920 1178 </string>
+								<string>297 352 1099 565 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>573pt</string>
+							<string>388pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -376,9 +376,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 578}, {828, 131}}</string>
+								<string>{{0, 393}, {823, 131}}</string>
 								<key>RubberWindowFrame</key>
-								<string>320 23 1104 750 0 0 1920 1178 </string>
+								<string>297 352 1099 565 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -387,7 +387,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>828pt</string>
+					<string>823pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -550,7 +550,7 @@
 		<string>/Users/rogerp/Documents/PROJECTS/FDT4/B-ReelRoger/c++/openframeworks/of_preRelease_v007_osx/apps/roger/thaLilyGit/thaLily.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>320 23 1104 750 0 0 1920 1178 </string>
+	<string>297 352 1099 565 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
