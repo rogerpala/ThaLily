@@ -5,16 +5,21 @@ extern int framesPerTransition;
 extern bool goingForward;
 extern int targetFrame;
 
+int NUM_INTRO_FRAMES = 380;
+int FRAMES_PER_FRAME_INTRO = 5;
+int FRAMES_PER_TRANSITION_INTRO = 5;
+
 //--------------------------------------------------------------
 void testApp::setup(){
 	
 	ofSetFrameRate(60);
+	ofBackground(0, 0, 0, 255);
 	
 	camWidth 		= 320;	// try to grab at this size. 
 	camHeight 		= 240;
 	
 	posX = ofGetWindowWidth() - camWidth;
-	posY = ofGetWindowHeight() - camHeight;
+	posY = 0;
 	
 	vidGrabber.setVerbose(true);
 	vidGrabber.initGrabber(camWidth,camHeight);
@@ -40,8 +45,12 @@ void testApp::setup(){
 	
 	frameCount = 0;
 	viewerLevel = 0;
-	framesPerFrame = 10;
-	framesPerTransition = 100;
+	isIntroPlayed = false;
+	
+	framesPerFrame = FRAMES_PER_FRAME_INTRO;
+	framesPerTransition = FRAMES_PER_TRANSITION_INTRO;
+	targetFrame = NUM_INTRO_FRAMES;
+	
 	
 }
 
@@ -79,7 +88,7 @@ void testApp::draw(){
 		goingForward = false;
 	}
 	
-	targetFrame = viewerLevel;
+	targetFrame = viewerLevel + NUM_INTRO_FRAMES;
 	
 	gui.draw();
 }

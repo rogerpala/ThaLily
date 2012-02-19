@@ -13,11 +13,11 @@
     </SliderInt_viewerLevel>
     <SliderInt_framesPerFrame>
         <name>framesPerFrame</name>
-        <value>3</value>
+        <value>10</value>
     </SliderInt_framesPerFrame>
     <SliderInt_framesPerTransition>
         <name>framesPerTransition</name>
-        <value>16</value>
+        <value>6</value>
     </SliderInt_framesPerTransition>
     <Toggle_goingForward>
         <name>goingForward</name>

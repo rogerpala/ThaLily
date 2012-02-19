@@ -86,7 +86,6 @@ void VideoManager::update(){
 			if(!isTransitioning) startTransition();
 		}
 	}
-	
 	framesCount++;
 }
 
@@ -141,10 +140,7 @@ void VideoManager::startTransition()
 
 //--------------------------------------------------------------
 void VideoManager::draw(){
-	
-	
-	
-	
+
 	float aX = ofGetWidth() * 0.5 - mov1.width * 0.5;
 	float aY = ofGetHeight() * 0.5 - mov1.height * 0.5;
 	//xfade = sin(time);

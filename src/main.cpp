@@ -8,6 +8,6 @@ int targetFrame = 1;
 
 int main() {
 	ofAppGlutWindow window;
-	ofSetupOpenGL(&window, 984, 983, OF_WINDOW);
+	ofSetupOpenGL(&window, 1080, 1920, OF_WINDOW);
 	ofRunApp(new testApp());
 }

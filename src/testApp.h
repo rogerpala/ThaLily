@@ -34,6 +34,7 @@ class testApp : public ofBaseApp{
 		int frameCount;
 		int viewerLevel;
 		int posX, posY;
+		bool isIntroPlayed;
 	
 	
 		//video
