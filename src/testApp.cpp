@@ -10,10 +10,10 @@ int NUM_INTRO_FRAMES = 180;
 int TOTAL_FRAMES = 1481;
 int FRAMES_PER_FRAME_INTRO = 1;
 int FRAMES_PER_TRANSITION_INTRO = 1;
-int FRAMES_PER_FRAME = 20;
-int FRAMES_PER_TRANSITION = 200;
-int DEFAULT_HAAR_MIN_WIDTH = 65;
-int DEFAULT_HAAR_MIN_HEIGHT = 100;
+int FRAMES_PER_FRAME = 10;
+int FRAMES_PER_TRANSITION = 100;
+int DEFAULT_HAAR_MIN_WIDTH = 50;
+int DEFAULT_HAAR_MIN_HEIGHT = 75;
 
 //--------------------------------------------------------------
 void testApp::setup(){
