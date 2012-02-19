@@ -32,7 +32,7 @@ public:
 	ofVideoPlayer* to;
 	
 	
-	
+	int frameNumber;
 	int framesCount;
 	int totalFrames;
 	

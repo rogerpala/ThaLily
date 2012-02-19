@@ -14,7 +14,7 @@ extern int framesPerTransition;
 extern bool goingForward;
 extern int targetFrame;
 
-int frameNumber;
+
 
 
 //--------------------------------------------------------------
@@ -66,11 +66,11 @@ void VideoManager::update(){
 	//std::swap(from, to);
 	
 	if(!frameRendered){
-		if(targetFrame > frameNumber){
+		if(targetFrame > frameNumber && targetFrame != frameNumber){
 			frameNumber++;
 			from->setFrame(frameNumber);
 			to->setFrame(frameNumber+1);
-		}else {
+		}else if(targetFrame != frameNumber){
 			frameNumber--;
 			from->setFrame(frameNumber);
 			to->setFrame(frameNumber-1);
@@ -82,7 +82,7 @@ void VideoManager::update(){
 		framesCount = 0;
 		frameRendered = true;
 	}else{
-		if (framesCount > framesPerFrame) {
+		if (framesCount > framesPerFrame && targetFrame != frameNumber) {
 			if(!isTransitioning) startTransition();
 		}
 	}
@@ -97,7 +97,7 @@ void VideoManager::swapMovies(ofVideoPlayer*& a, ofVideoPlayer*& b)
 }
 
 void VideoManager::onStart(tween::TweenerParam& param){
-	//cout << "onStart!" << std::endl;
+	cout << "onStart!" << std::endl;
 	//step = 0;
 	isTransitioning = true;
 	xfade = 1;

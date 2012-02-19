@@ -6,8 +6,9 @@ extern bool goingForward;
 extern int targetFrame;
 
 int NUM_INTRO_FRAMES = 380;
-int FRAMES_PER_FRAME_INTRO = 5;
-int FRAMES_PER_TRANSITION_INTRO = 5;
+int TOTAL_FRAMES = 1660;
+int FRAMES_PER_FRAME_INTRO = 1;
+int FRAMES_PER_TRANSITION_INTRO = 1;
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -72,23 +73,31 @@ void testApp::draw(){
 	
 	videoManager.draw();
 	
-	vidGrabber.draw(posX, posY);
-	ofNoFill();
-	for(int i = 0; i < finder.blobs.size(); i++) {
-		ofRectangle cur = finder.blobs[i].boundingRect;
-		ofRect(posX + cur.x, posY + cur.y, cur.width, cur.height);
-		if(viewerLevel < 380) {
+	if(isIntroPlayed){
+		vidGrabber.draw(posX, posY);
+		ofNoFill();
+		for(int i = 0; i < finder.blobs.size(); i++) {
+			ofRectangle cur = finder.blobs[i].boundingRect;
+			ofRect(posX + cur.x, posY + cur.y, cur.width, cur.height);
+			if(viewerLevel > 0) {
+				viewerLevel--;
+				goingForward = false;
+			}
+		}
+		
+		if(finder.blobs.size() == 0 && viewerLevel < TOTAL_FRAMES - NUM_INTRO_FRAMES) {
 			viewerLevel++;
 			goingForward = true;
 		}
+		
+		targetFrame = viewerLevel + NUM_INTRO_FRAMES;
+	}else {
+		if (videoManager.frameNumber == NUM_INTRO_FRAMES) {
+			isIntroPlayed = true;
+		}
 	}
+
 	
-	if(finder.blobs.size() == 0 && viewerLevel > 0) {
-		viewerLevel--;
-		goingForward = false;
-	}
-	
-	targetFrame = viewerLevel + NUM_INTRO_FRAMES;
 	
 	gui.draw();
 }

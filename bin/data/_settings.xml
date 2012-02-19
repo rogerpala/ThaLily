@@ -9,7 +9,7 @@
     </SliderInt_haarFinderMinHeight>
     <SliderInt_viewerLevel>
         <name>viewerLevel</name>
-        <value>380</value>
+        <value>64</value>
     </SliderInt_viewerLevel>
     <SliderInt_framesPerFrame>
         <name>framesPerFrame</name>
@@ -17,7 +17,7 @@
     </SliderInt_framesPerFrame>
     <SliderInt_framesPerTransition>
         <name>framesPerTransition</name>
-        <value>6</value>
+        <value>1</value>
     </SliderInt_framesPerTransition>
     <Toggle_goingForward>
         <name>goingForward</name>
