@@ -328,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C58FB2EE14F12A8B0094B8E1</string>
+										<string>C58FB32E14F13CE10094B8E1</string>
 										<key>history</key>
 										<array>
 											<string>C53DDA25142D353800198F07</string>
@@ -342,7 +342,7 @@
 											<string>C53969F6147424C100811FCE</string>
 											<string>C5396A011474270D00811FCE</string>
 											<string>C5396A021474270D00811FCE</string>
-											<string>C58FB2C614F123F30094B8E1</string>
+											<string>C58FB2EE14F12A8B0094B8E1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -354,14 +354,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {828, 345}}</string>
+								<string>{{0, 0}, {828, 334}}</string>
 								<key>RubberWindowFrame</key>
 								<string>394 428 1104 750 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>345pt</string>
+							<string>334pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -374,14 +374,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 350}, {828, 359}}</string>
+								<string>{{0, 339}, {828, 370}}</string>
 								<key>RubberWindowFrame</key>
 								<string>394 428 1104 750 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>359pt</string>
+							<string>370pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -400,9 +400,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C58FB2EF14F12A8B0094B8E1</string>
+				<string>C58FB32F14F13CE10094B8E1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>C58FB2F014F12A8B0094B8E1</string>
+				<string>C58FB33014F13CE10094B8E1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -541,7 +541,7 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>C523498613F021E40010F424</string>
-		<string>/Users/rogerp/Documents/PROJECTS/FDT4/B-ReelRoger/c++/openframeworks/of_preRelease_v007_osx/apps/roger/thaLily/thaLily.xcodeproj</string>
+		<string>/Users/rogerp/Documents/PROJECTS/FDT4/B-ReelRoger/c++/openframeworks/of_preRelease_v007_osx/apps/roger/thaLilyGit/thaLily.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>394 428 1104 750 0 0 1920 1178 </string>
@@ -621,7 +621,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>C523498613F021E40010F424</string>
-				<string>C58FB2F114F12A8B0094B8E1</string>
+				<string>C58FB33114F13CE10094B8E1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

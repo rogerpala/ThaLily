@@ -7,3 +7,5 @@
 xcuserdata
 project.xcworkspace
 .pbxproj
+*.mode1v3
+/thaLily.xcodeproj
