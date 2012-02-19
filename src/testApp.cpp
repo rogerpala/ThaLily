@@ -9,6 +9,9 @@ int NUM_INTRO_FRAMES = 380;
 int TOTAL_FRAMES = 1660;
 int FRAMES_PER_FRAME_INTRO = 1;
 int FRAMES_PER_TRANSITION_INTRO = 1;
+int DEFAULT_HAAR_MIN_WIDTH = 65;
+int DEFAULT_HAAR_MIN_HEIGHT = 100;
+bool DEBUG = false;
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -34,15 +37,21 @@ void testApp::setup(){
 	finder.setScaleHaar(1.5);
 	finder.setup("haarcascade_frontalface_default.xml");
 	
-	gui.addTitle("HAAR SETTINGS");
-	gui.addSlider("haarFinderMinWidth", haarFinderMinWidth, 0, 320);
-	gui.addSlider("haarFinderMinHeight", haarFinderMinHeight, 0, 240);
-	gui.addSlider("viewerLevel", viewerLevel, 0, 2000);
-	gui.addSlider("framesPerFrame", framesPerFrame, 1, 60*5);
-	gui.addSlider("framesPerTransition", framesPerTransition, 1, 60*5);
-	gui.addToggle("goingForward", goingForward);
-	gui.loadFromXML();
-	gui.show();
+	if(DEBUG){
+		gui.addTitle("HAAR SETTINGS");
+		gui.addSlider("haarFinderMinWidth", haarFinderMinWidth, 0, 320);
+		gui.addSlider("haarFinderMinHeight", haarFinderMinHeight, 0, 240);
+		gui.addSlider("viewerLevel", viewerLevel, 0, 2000);
+		gui.addSlider("framesPerFrame", framesPerFrame, 1, 60*5);
+		gui.addSlider("framesPerTransition", framesPerTransition, 1, 60*5);
+		gui.addToggle("goingForward", goingForward);
+		gui.loadFromXML();
+		gui.show();
+	}else {
+		haarFinderMinWidth = DEFAULT_HAAR_MIN_WIDTH;
+		haarFinderMinHeight = DEFAULT_HAAR_MIN_HEIGHT;
+	}
+
 	
 	frameCount = 0;
 	viewerLevel = 0;
@@ -74,11 +83,11 @@ void testApp::draw(){
 	videoManager.draw();
 	
 	if(isIntroPlayed){
-		vidGrabber.draw(posX, posY);
+		if(DEBUG) vidGrabber.draw(posX, posY);
 		ofNoFill();
 		for(int i = 0; i < finder.blobs.size(); i++) {
 			ofRectangle cur = finder.blobs[i].boundingRect;
-			ofRect(posX + cur.x, posY + cur.y, cur.width, cur.height);
+			if(DEBUG) ofRect(posX + cur.x, posY + cur.y, cur.width, cur.height);
 			if(viewerLevel > 0) {
 				viewerLevel--;
 				goingForward = false;
@@ -99,7 +108,7 @@ void testApp::draw(){
 
 	
 	
-	gui.draw();
+	if(DEBUG) gui.draw();
 }
 
 //--------------------------------------------------------------

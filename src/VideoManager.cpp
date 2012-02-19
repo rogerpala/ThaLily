@@ -19,9 +19,6 @@ extern int targetFrame;
 
 //--------------------------------------------------------------
 VideoManager::VideoManager(){
-		
-	
-	string videoPath = ofToDataPath("fingers.mov");
 	
 	
 	
@@ -32,8 +29,8 @@ VideoManager::VideoManager(){
 	
 	
 	ofDisableDataPath();
-	mov1.loadMovie("data/lily.mov");
-	mov2.loadMovie("data/lily.mov");
+	mov1.loadMovie("data/videos/01_cropped_grade_remapped_photojpeg.mov");
+	mov2.loadMovie("data/videos/01_cropped_grade_remapped_photojpeg.mov");
 	ofEnableDataPath();
 	
 		

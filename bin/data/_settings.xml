@@ -1,15 +1,15 @@
 <controls>
     <SliderInt_haarFinderMinWidth>
         <name>haarFinderMinWidth</name>
-        <value>1</value>
+        <value>72</value>
     </SliderInt_haarFinderMinWidth>
     <SliderInt_haarFinderMinHeight>
         <name>haarFinderMinHeight</name>
-        <value>0</value>
+        <value>70</value>
     </SliderInt_haarFinderMinHeight>
     <SliderInt_viewerLevel>
         <name>viewerLevel</name>
-        <value>64</value>
+        <value>0</value>
     </SliderInt_viewerLevel>
     <SliderInt_framesPerFrame>
         <name>framesPerFrame</name>
@@ -21,6 +21,6 @@
     </SliderInt_framesPerTransition>
     <Toggle_goingForward>
         <name>goingForward</name>
-        <value>1</value>
+        <value>0</value>
     </Toggle_goingForward>
 </controls>

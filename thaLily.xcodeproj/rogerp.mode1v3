@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>10</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -299,7 +299,7 @@
 							<real>254</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>228 327 1104 750 0 0 1920 1178 </string>
+						<string>320 23 1104 750 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>testApp.cpp</string>
+								<string>VideoManager.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>testApp.cpp</string>
+										<string>VideoManager.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C59B0DE814F1598C00EF2D89</string>
+										<string>C59B0E0314F161F100EF2D89</string>
 										<key>history</key>
 										<array>
 											<string>C53DDA25142D353800198F07</string>
@@ -342,9 +342,9 @@
 											<string>C59B0DBD14F1447800EF2D89</string>
 											<string>C59B0DD814F1568800EF2D89</string>
 											<string>C59B0DDE14F1577E00EF2D89</string>
-											<string>C59B0DDF14F1577E00EF2D89</string>
-											<string>C59B0DE014F1577E00EF2D89</string>
-											<string>C59B0DE114F1577E00EF2D89</string>
+											<string>C59B0DF914F160E500EF2D89</string>
+											<string>C59B0DFA14F160E500EF2D89</string>
+											<string>C59B0DFB14F160E500EF2D89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -358,7 +358,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {828, 573}}</string>
 								<key>RubberWindowFrame</key>
-								<string>228 327 1104 750 0 0 1920 1178 </string>
+								<string>320 23 1104 750 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -378,7 +378,7 @@
 								<key>Frame</key>
 								<string>{{0, 578}, {828, 131}}</string>
 								<key>RubberWindowFrame</key>
-								<string>228 327 1104 750 0 0 1920 1178 </string>
+								<string>320 23 1104 750 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -544,13 +544,13 @@
 	<array>
 		<string>C59B0DA714F141B200EF2D89</string>
 		<string>C59B0DA814F141B200EF2D89</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>C523498613F021E40010F424</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/rogerp/Documents/PROJECTS/FDT4/B-ReelRoger/c++/openframeworks/of_preRelease_v007_osx/apps/roger/thaLilyGit/thaLily.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>228 327 1104 750 0 0 1920 1178 </string>
+	<string>320 23 1104 750 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -888,7 +888,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>322 862 650 250 0 0 1920 1178 </string>
+								<string>108 769 650 250 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -917,11 +917,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>322 862 650 250 0 0 1920 1178 </string>
+			<string>108 769 650 250 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
