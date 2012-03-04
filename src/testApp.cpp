@@ -98,7 +98,7 @@ void testApp::draw(){
 			if(viewerLevel > 0) {
 				viewerLevel--;
 				if(goingForward){
-					cout << "CHANGE TO BACKWARDS" << endl;
+					if(DEBUG)cout << "CHANGE TO BACKWARDS" << endl;
 					framesPerFrame = FRAMES_PER_FRAME_BLOOM;
 					framesPerTransition = FRAMES_PER_TRANSITION_BLOOM;
 					goingForward = false;
@@ -111,7 +111,7 @@ void testApp::draw(){
 		if(finder.blobs.size() == 0 && viewerLevel < TOTAL_FRAMES - NUM_INTRO_FRAMES) {
 			viewerLevel++;
 			if(!goingForward){
-				cout << "CHANGE TO FORWARD" << endl;
+				if(DEBUG)cout << "CHANGE TO FORWARD" << endl;
 				framesPerFrame = FRAMES_PER_FRAME_WITHER;
 				framesPerTransition = FRAMES_PER_TRANSITION_WITHER;
 				goingForward = true;
