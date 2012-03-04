@@ -6,12 +6,17 @@ extern bool goingForward;
 extern int targetFrame;
 extern bool DEBUG;
 
-int NUM_INTRO_FRAMES = 180;
-int TOTAL_FRAMES = 1481;
+int NUM_INTRO_FRAMES = 240;
+int TOTAL_FRAMES = 1588;
 int FRAMES_PER_FRAME_INTRO = 1;
 int FRAMES_PER_TRANSITION_INTRO = 1;
-int FRAMES_PER_FRAME = 10;
-int FRAMES_PER_TRANSITION = 100;
+
+int FRAMES_PER_FRAME_WITHER = 1;
+int FRAMES_PER_TRANSITION_WITHER = 70;
+
+int FRAMES_PER_FRAME_BLOOM = 1;
+int FRAMES_PER_TRANSITION_BLOOM = 45;
+
 int DEFAULT_HAAR_MIN_WIDTH = 50;
 int DEFAULT_HAAR_MIN_HEIGHT = 75;
 
@@ -92,20 +97,36 @@ void testApp::draw(){
 			if(DEBUG) ofRect(posX + cur.x, posY + cur.y, cur.width, cur.height);
 			if(viewerLevel > 0) {
 				viewerLevel--;
-				goingForward = false;
+				if(goingForward){
+					cout << "CHANGE TO BACKWARDS" << endl;
+					framesPerFrame = FRAMES_PER_FRAME_BLOOM;
+					framesPerTransition = FRAMES_PER_TRANSITION_BLOOM;
+					goingForward = false;
+					viewerLevel = videoManager.frameNumber - NUM_INTRO_FRAMES;
+				}
+				
 			}
 		}
 		
 		if(finder.blobs.size() == 0 && viewerLevel < TOTAL_FRAMES - NUM_INTRO_FRAMES) {
 			viewerLevel++;
-			goingForward = true;
+			if(!goingForward){
+				cout << "CHANGE TO FORWARD" << endl;
+				framesPerFrame = FRAMES_PER_FRAME_WITHER;
+				framesPerTransition = FRAMES_PER_TRANSITION_WITHER;
+				goingForward = true;
+				viewerLevel = videoManager.frameNumber - NUM_INTRO_FRAMES;
+			}
 		}
 		targetFrame = viewerLevel + NUM_INTRO_FRAMES;
+		
+		
+		
 	}else {
 		if (videoManager.frameNumber == NUM_INTRO_FRAMES) {
 			isIntroPlayed = true;
-			framesPerFrame = FRAMES_PER_FRAME;
-			framesPerTransition = FRAMES_PER_TRANSITION;
+			framesPerFrame = FRAMES_PER_FRAME_WITHER;
+			framesPerTransition = FRAMES_PER_TRANSITION_WITHER;
 		}
 	}
 

@@ -41,8 +41,6 @@ VideoManager::VideoManager(){
 	to = &mov2;
 	
 	xfade = 1.0;
-	framesPerFrame = 60 * 3;
-	framesPerTransition = 60;
 	framesCount = 0;
 	isTransitioning = false;
 	frameRendered = false;
@@ -75,8 +73,6 @@ void VideoManager::update(){
 			from->setFrame(frameNumber);
 			to->setFrame(frameNumber-1);
 		}
-		
-		
 		if(DEBUG) cout << "from FrameNumber: " << from->getCurrentFrame() << endl;
 		if(DEBUG) cout << "to FrameNumber: " << to->getCurrentFrame() << endl;
 		framesCount = 0;
