@@ -9,3 +9,5 @@ project.xcworkspace
 *.mode1v3
 /thaLily.xcodeproj
 *.app
+
+bin/thaLily_20120304.zip
